@@ -1,0 +1,50 @@
+<!doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>PAINT</title>
+            <meta name="description" content="Application">
+            <link rel="stylesheet" href="estiloCanvas.css">
+        </head>
+        <body id="body">
+            <canvas id="canvas"></canvas>
+            <div id="panel">
+                    <div class="titulo_panel1"><span class="titulo_panel2">CREATE</span></div>
+                    <ul id="cuerpo_panel">
+                        <li>
+                            Herramientas:
+                            <p>
+                                <select id="herramientas">
+                                    <option selected="selected">Pincel</option>
+                                </select>
+                            </p>
+                        </li>
+                        <li>
+                            Grosor: <span id="n_range">5</span>
+                            <p>
+                                <input type="range" id="rr" min="1" max="100" value="5"><!-- #rr es el valor -->
+                            </p>
+                        </li><!-- tamaño -->
+                        <li>
+                            C: <input id="color" name="color" type="color" value='#000'>
+                        </li>
+                        <li>
+                            B-C: <input id="bg_color" name="bg_color" type="color" value='#fff'>
+                        </li>
+                        <li>
+                            <button id="jpeg">Descargar</button>
+                        </li>
+                        <li>
+                            <button id="borrar">Borrar</button>
+                        </li>
+                    </ul>
+                </div><!-- /config -->
+                <div id="c"></div>
+                <div id="bg_c"></div>
+        </body>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script> 
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <script src="canvas.js"></script>
+    </html>

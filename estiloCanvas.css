@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#canvas {
+    position: relative;
+    cursor: crosshair;
+    background-color: white;
+    margin-top: 50px;
+}
+#panel {
+    background-color: white;
+    width: 180px;
+    height: auto;
+    box-shadow: 0px 0px 9px #7a7a7a;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 25px;;
+}
+
+.titulo_panel1 {
+    display: flex;
+    justify-content: center;
+    background-color: #cecece;
+}
+.titulo_panel2 {
+    background-color: #cecece;
+    display: block;
+    color:black;
+    font-weight: bold;
+    padding: 7px;
+    cursor: move;
+}
+#cuerpo_panel li {
+    padding-bottom: 10px;
+}
+#cuerpo_panel li p {
+    text-align: left;
+    margin-top: 10px;
+}
+#cuerpo_panel li p select {
+    width: 50%;
+}
+
